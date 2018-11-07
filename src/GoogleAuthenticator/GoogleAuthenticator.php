@@ -48,7 +48,6 @@ class GoogleAuthenticator
 
         if (static::SECRET_LENGTH !== strlen($this->secretKey)
             || 0 !== count(array_diff(str_split($this->secretKey), $this->base32Chars))) {
-
             throw new GoogleAuthenticatorException('Invalid secret key');
         }
     }
@@ -65,7 +64,7 @@ class GoogleAuthenticator
         $secretKey = '';
 
         for ($i = 0; $i < static::SECRET_LENGTH; $i++) {
-            $key = Rand::getInteger(0,count($base32Chars)-1);
+            $key = Rand::getInteger(0, count($base32Chars)-1);
             $secretKey .= $base32Chars[$key];
         }
 

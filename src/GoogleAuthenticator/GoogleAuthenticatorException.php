@@ -12,5 +12,4 @@ namespace GoogleAuthenticator;
 
 class GoogleAuthenticatorException extends \Exception
 {
-
 }
