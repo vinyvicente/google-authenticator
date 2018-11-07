@@ -1,9 +1,6 @@
 google-authenticator
 ====================
 
-[![Latest Stable Version](https://poser.pugx.org/leandrolugaresi/google-authenticator/v/stable.svg)](https://packagist.org/packages/leandrolugaresi/google-authenticator) [![Total Downloads](https://poser.pugx.org/leandrolugaresi/google-authenticator/downloads.svg)](https://packagist.org/packages/leandrolugaresi/google-authenticator) [![Latest Unstable Version](https://poser.pugx.org/leandrolugaresi/google-authenticator/v/unstable.svg)](https://packagist.org/packages/leandrolugaresi/google-authenticator) [![License](https://poser.pugx.org/leandrolugaresi/google-authenticator/license.svg)](https://packagist.org/packages/leandrolugaresi/google-authenticator)
-[ ![Codeship Status for leandro-lugaresi/google-authenticator](https://www.codeship.io/projects/c56f02e0-2489-0132-ed0d-5e8cf715c71c/status?branch=master)](https://www.codeship.io/projects/36901)
-
 Introduction
 ------------
 
@@ -22,7 +19,7 @@ Installation
 
 ```json
     "require": {
-        "leandrolugaresi/google-authenticator": "1.0.*"
+        "vinyvicente/google-authenticator": "1.1"
     }
 ```
 
@@ -68,10 +65,6 @@ Verify the code from form and save the secretKey of this user:
 
     // Verify Code
     if ($google->verifyCode($userSubmitCode)) {
-
-        // OK - aloowed login
+        // OK - allowed login
     }
 ```
-
-##Demonstration
-[http://googleauthenticator.leandrolugaresi.com.br](http://googleauthenticator.leandrolugaresi.com.br)
